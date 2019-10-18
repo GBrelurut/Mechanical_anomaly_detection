@@ -12865,7 +12865,7 @@ first compression step. This steps can be considered from a signal processing vi
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We use the elu (Exponential linear unit) activation function, which returns x if x &gt; 0 and
-exp((x)-1) if x &lt; 0). Here all values are positives so the activation functions is set to return x. No difference was observed based on variation of the initialization of weights. This may mean that model training is complete after 100 iterations, and thus results are stable.</p>
+exp((x)-1) if x &lt; 0). Such choice allows faster convergence of model weigths compared to relu because of non null output for x &lt; 0. No difference was observed based on variation of the initialization of weights. This may mean that model training is complete after 100 iterations, and thus results are stable.</p>
 
 </div>
 </div>
